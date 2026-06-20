@@ -1,0 +1,19 @@
+include $HOME/.config/i3/theme.conf
+include $HOME/.config/i3/shortcuts.conf
+include $HOME/.config/i3/startup.conf
+include $HOME/.config/i3/workspace.conf
+include $HOME/.config/i3/window.conf
+
+set $term --no-startup-id kitty
+set $file ranger
+set $mod Mod4
+
+font pango:JetBrainsMono Nerd 11
+
+floating_modifier $mod
+tiling_drag modifier titlebar
+focus_follows_mouse yes
+
+bindsym $mod+F2 restart
+bindsym $mod+Return exec $term
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. D you reallly want to exit i3? -B 'Yes, exit.' 'i3-msg exit'"
