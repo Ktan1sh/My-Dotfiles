@@ -5,5 +5,5 @@ This repository contains dotfiles for:
 - polybar
 - ranger
 - fish
+- starship
 
-Later i will be adding my starship config aswell.
